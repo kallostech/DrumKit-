@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Pure Javascript Simple Drum Kit</title>
+        <link rel="stylesheet" href="css/style.css" >
+    </head>
+
+    <body>
+        <!-- This is a simple Javascript Drum Kit with a few sounds that demonstrate -->
+        <h1>Javascript Drum Kit!</h1>
+
+        <!-- What I learnt
+        1.] <kbd> element represents user input (usually keyboard input). Can be used to represent other types of input such as voice commands.
+        2.] data-key: data attributes, to make up a key or a tag, put it behind data-[name]. HTML Standard. 
+        
+        (65 is the A key)    
+        -->
+        <div class="keys"> <!-- All the keys available for the drum kit A - L on qwerty keyboard -->
+            <div data-key="65" class="key">
+                <kbd>A</kbd>
+                <span class="sound">CLAP</span>
+            </div>
+            <div data-key="83" class="key">
+                <kbd>S</kbd>
+                <span class="sound">HIHAT</span>
+            </div>
+            <div data-key="68" class="key">
+                <kbd>D</kbd>
+                <span class="sound">KICK</span>
+            </div>
+            <div data-key="70" class="key">
+                <kbd>F</kbd>
+                <span class="sound">OPENHAT</span>
+            </div>
+            <div data-key="71" class="key">
+                <kbd>G</kbd>
+                <span class="sound">BOOM</span>
+            </div>
+            <div data-key="72" class="key">
+                <kbd>H</kbd>
+                <span class="sound">RIDE</span>
+            </div>
+            <div data-key="74" class="key">
+                <kbd>J</kbd>
+                <span class="sound">SNARE</span>
+            </div>
+            <div data-key="75" class="key">
+                <kbd>K</kbd>
+                <span class="sound">TOM</span>
+            </div>
+            <div data-key="76" class="key">
+                <kbd>L</kbd>
+                <span class="sound">TINK</span>
+            </div>
+        </div>
+
+        <!-- Audio Linked to the data-key attributes of the divs in the above html -->
+        <audio data-key="65" src="sounds/clap.wav"></audio>       <!-- A Key -->
+        <audio data-key="83" src="sounds/hihat.wav"></audio>      <!-- S Key -->
+        <audio data-key="68" src="sounds/kick.wav"></audio>       <!-- D Key -->
+        <audio data-key="70" src="sounds/openhat.wav"></audio>    <!-- F Key -->
+        <audio data-key="71" src="sounds/boom.wav"></audio>       <!-- G Key -->
+        <audio data-key="72" src="sounds/ride.wav"></audio>       <!-- H Key -->
+        <audio data-key="74" src="sounds/snare.wav"></audio>      <!-- J Key -->
+        <audio data-key="75" src="sounds/tom.wav"></audio>        <!-- K Key -->
+        <audio data-key="76" src="sounds/tink.wav"></audio>       <!-- L Key -->
+
+        <!-- Java Script for the Drum Kit -->
+        <script src="js/drumkit.js" ></script>
+
+    </body>
+
+    </html>

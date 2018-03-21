@@ -1,0 +1,58 @@
+/* Cascading Style sheets for the JS-DRUMKIT Project */
+body{
+    background-color: black;
+    font-size: 16px;
+    background-size: 100%;
+    background: url("../media/large-background.jpeg");
+    margin: 0;
+    padding:0;
+    font-family: Cambria;
+    max-height: 100vh;
+}
+
+h1{
+    font-size: 80px;
+    color: aliceblue;
+    text-align: center;
+    padding-bottom: 0px;
+    
+}
+kbd {
+    display: block;
+    font-size: 4rem;
+}
+
+.keys {
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.key {
+    border: .4rem solid black;
+    border-radius: .5rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem .5rem;
+    transition: all .07s ease;
+    width: 10rem;
+    text-align: center;
+    color: rgb(248, 18, 191);
+    background: rgba(139, 238, 10, 0.801);
+    text-shadow: 0 0 .5rem rgb(248, 244, 12);
+}
+
+.playing {
+    transform: scale(1.1);
+    border-color: #7700ff;
+    box-shadow: 0 0 1rem #00eeff;
+}
+
+.sound{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: black;
+}
